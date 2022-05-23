@@ -27,6 +27,13 @@ button {
 
 .btn-secondary {
     background-color: blueviolet !important;
+    padding: 10px;
+    height: 40px;
+}
+
+.btn-secondary .login {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -103,15 +110,17 @@ button {
 
 /* Bagian Angka */
 
-.container-xl .row img {
-    position: relative;
-}
 
-.container-xl .kenapa h1 {
+/* .container-xl .row img {
+    position: relative;
+} */
+
+
+/* .container-xl .kenapa h1 {
     color: black;
     position: relative;
     left: -165px;
-}
+} */
 
 section .container h1 {
     color: white;
@@ -133,9 +142,34 @@ section .container {
 
 .container-xl .row .col h1 {
     font-size: 25px;
-    position: relative;
-    right: 210px;
+    /* position: relative;
+    right: 210px; */
     letter-spacing: 2px;
+}
+
+
+/* CSS BARU */
+
+
+/* icon */
+
+.container-xl .icon .col i {
+    color: blueviolet;
+    font-size: 25px;
+}
+
+
+/* font kenapa harus belajar disini */
+
+.container-xl .icon .col h1 {
+    font-size: 15px;
+}
+
+
+/* font untuk P */
+
+.container-xl .icon .col p {
+    font-size: 20px;
 }
 
 .container-xl .row .col-lg-2 i {
@@ -160,28 +194,21 @@ section .container {
 
 /* ButtonLihat Semua Kelas */
 
-.container .kelas i {
-    position: relative;
-    right: -7px;
-    top: 3px;
-    color: white;
-    font-size: 20px;
-}
-
-.container .kelas .btn-primary {
-    border-radius: 14px;
+.container .lihat .btn-primary {
+    border-radius: 20px;
 }
 
 
 /* Baris Apa Kata Mereka Tentang Kami */
 
-.testimonial h1 {
+
+/* .testimonial h1 {
     padding-left: 550px;
 }
 
 .testimonial p {
     padding-left: 100px;
-}
+} */
 
 .testimonials {
     display: grid;
@@ -412,4 +439,168 @@ nav .collapse .btn:hover {
 .master p {
     position: relative;
     top: 50px;
+}
+
+.gokil img .hero {
+    width: 20px;
+    height: 20px;
+}
+
+.terbaru .blender .btn-primary {
+    height: 40px;
+    width: 110px;
+}
+
+.mastering h5 {
+    font-size: 22px;
+}
+
+
+/* .blender p {
+    padding-bottom: 60px;
+} */
+
+
+/* responsive */
+
+@media screen and (max-width: 960px) {
+    nav .navbar-toggler {
+        position: relative;
+        left: 10px;
+    }
+    .gokil img {
+        width: 1000px;
+        text-align: center;
+        position: relative;
+        left: -520px;
+        width: 1000px;
+        height: 300px;
+        bottom: 10px;
+    }
+    .gokil h2 {
+        position: relative;
+        bottom: 90px;
+        font-size: 30px;
+        text-align: center;
+        left: -20px;
+    }
+    .gokil p {
+        position: relative;
+        bottom: 90px;
+        text-align: center;
+        left: -30px;
+    }
+    .belanja .btn-primary {
+        text-align: center;
+        position: relative;
+        left: 100px;
+        top: 260px;
+    }
+    .belanja .btn-dark {
+        text-align: center;
+        position: relative;
+        left: 100px;
+        top: 260px;
+    }
+    .gokil .gokil1 {
+        display: none;
+    }
+    section .container {
+        display: flex;
+        text-align: center;
+        position: relative;
+        left: 20px;
+        width: 300px;
+        margin: 20px;
+    }
+    /* .container-xl .kenapa h1 {
+        text-align: center;
+        position: relative;
+        top: 200px;
+        left: 50px;
+        width: 300px;
+    } */
+    .container-xl .row i {
+        text-align: center;
+        /* position: relative;
+        left: 180px;
+        bottom: 90px; */
+        font-size: 50px;
+    }
+    .container-xl h1 {
+        text-align: center;
+        /* position: relative;
+        bottom: 100px;
+        left: 10px; */
+    }
+    .container-xl .row p {
+        text-align: center;
+        /* position: relative;
+        bottom: 100px;
+        left: 10px; */
+    }
+    .promo .card-body p {
+        text-align: left;
+    }
+    .terbaru .card-body img {
+        align-self: left;
+        align-content: left;
+        float: left;
+    }
+    .terbaru .card-body h5 {
+        position: relative;
+        top: 20px;
+    }
+    .blender p {
+        color: black;
+        position: relative;
+        right: 130px;
+    }
+    .terbaru .card {
+        margin-top: 15px;
+    }
+    .lihat .btn-primary {
+        width: 200px;
+        height: 33px;
+        border-radius: 20px;
+        align-items: center;
+    }
+    /* footer */
+    .container .bootstrap p {
+        text-align: left;
+    }
+    .container .bootstrap i {
+        font-size: 15px;
+    }
+    .container .footerlink p {
+        text-align: left;
+        position: relative;
+        right: 40px;
+    }
+    .container .footerlink ul li a {
+        text-align: left;
+        position: relative;
+        right: 40px;
+    }
+    .container .subrek {
+        text-align: left;
+        position: relative;
+        right: 25px;
+    }
+    .container input {
+        text-align: left;
+        position: relative;
+        left: 1px;
+        top: 7px;
+    }
+    .container .footerlink i {
+        font-size: 18px;
+        position: relative;
+        right: 150px;
+    }
+    .container .copy p {
+        position: relative;
+        left: 50px;
+        color: black;
+    }
 }

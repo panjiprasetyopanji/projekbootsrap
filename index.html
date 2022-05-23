@@ -40,24 +40,26 @@
                 <li class="nav-item active dropdown pl-3">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Kelas </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/kalaog/katalog.html">Semua Kelas</a>
-                        <a class="dropdown-item" href="/grapic/grapic.html">Kategori - Graphic Design</a>
-                        <a class="dropdown-item" href="/ilustration/ilustration.html">Kategori - Ilustration</a>
-                        <a class="dropdown-item" href="/3D/3d.html">Kategori - 3D Design</a>
-                        <a class="dropdown-item" href="/ui/ui.html  ">Kategori - UI/UX Design</a>
-                        <a class="dropdown-item" href="/videograpic/video.html">Kategori - Videography and Motion</a>
+                        <a class="dropdown-item" href="kalaog/katalog.html">Semua Kelas</a>
+                        <a class="dropdown-item" href="grapic/grapic.html">Kategori - Graphic Design</a>
+                        <a class="dropdown-item" href="ilustration/ilustration.html">Kategori - Ilustration</a>
+                        <a class="dropdown-item" href="3D/3d.html">Kategori - 3D Design</a>
+                        <a class="dropdown-item" href="ui/ui.html  ">Kategori - UI/UX Design</a>
+                        <a class="dropdown-item" href="videograpic/video.html">Kategori - Videography and Motion</a>
                     </div>
                 </li>
                 <li class="nav-item active pl-3">
-                    <a class="nav-link" href="/syarat/syarat.html">Syarat & ketentuan</a>
+                    <a class="nav-link" href="syarat/syarat.html">Syarat & ketentuan</a>
                 </li>
                 <li class="nav-item active pl-4">
-                    <a class="nav-link" href="/panduan/panduan.html">Panduan</a>
+                    <a class="nav-link" href="panduan/panduan.html">Panduan</a>
                 </li>
                 <li class="nav-item active pl-4">
-                    <a class="nav-link" href="/faq/faq.html">FAQ</a>
+                    <a class="nav-link" href="faq/faq.html">FAQ</a>
                 </li>
-                <button type="button" class="btn btn-secondary p-1 m-1">Login/Register</button>
+                <button type="button" class="btn btn-secondary p-1 m-1">
+                    <a class="login" href="login/index.html">Login/Register</a>
+                    </button>
             </ul>
         </div>
     </nav>
@@ -65,17 +67,18 @@
 
     <!-- Membuat Halaman Pertama Temukan BakatMu-->
     <div class="row gokil">
+        <div class="d-md-none d-block pt-5 text-center col-xl-6 col-lg-6 col-md-6col-12">
+            <img src="/gambar/hero.svg" class="hero"> </div>
         <div class="col">
             <h2>
                 Temukan<br>
                 <b>Bakat Kreatifmu</b><br> Brersama Kami !
                 <br>
-
             </h2>
             <p>Pelajari dan Perdalam Skill Kreatifmu disini bersama</p>
             <p><b>Puluhan Ribu Member</b> Lainnya.</p>
             <div class="col">
-                <img src="gambar/gokil.JPG" alt="Gokil" class="">
+                <img src="gambar/gokil.JPG" alt="Gokil" class="gokil1">
             </div>
         </div>
     </div>
@@ -83,7 +86,7 @@
     <div class="row belanja">
         <div class="col">
             <a href="#promo" class="btn btn-primary">Lihat Promo</a>
-            <a href="./kalaog/katalog.html" class="btn btn-dark">Lihat Katalog</a>
+            <a href="kalaog/katalog.html" class="btn btn-dark">Lihat Katalog</a>
         </div>
     </div>
 
@@ -115,75 +118,100 @@
     <!-- Penutup Pembuat angka -->
 
     <!-- Halaman Kenapa Harus Belajar -->
-    <div class="container-xl">
-        <div class="row kenapa align-items-center justify-content-between">
-            <div class="col text-right ml-5  ">
+    <div class="container-xl text-center">
+        <div class="row gambar">
+            <!-- dibagi menjadi 2 content kanan dan kiri col-lg-6 col-12 dan menjadi utuh -->
+            <div class="col col-lg-6 col-12 ">
+                <!-- untuk bagian gambar -->
+                <img src="gambar/2.JPG" width="500" />
+            </div>
+            <!-- untuk bagian kanan isi konten -->
+            <div class="col col-lg-6 col-12 text-left  ">
                 <h1><b>Kenapa Harus Belajar Disini</h1></b>
+                    <!-- membuat baris kembali untuk icon dll -->
+                    <!-- membungkus colom row -->
+                    <div class="row icon text-center text-lg-left">
+                        <!-- membuat isi konten -->
+                        <!-- 12:3=4 untuk membuat colom, 3 jadi menggunkan lg4  -->
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <i class="bi bi-clock-fill"></i>
+                            <h1><b>Akses Selamanya</h1></b>
+                                <p>Hanya dengan sekali Bayar saja, Akses Materi Selamanya.</p>
+                        </div>
+                        <!-- akhir konten pertama -->
+                        <!-- membuat isi konten -->
+                        <div class="col col-lg-4 col-md-6 col-12 ">
+                            <i class="bi bi-people-fill"></i>
+                            <h1><b>Konsultasi dengan Mentor</h1></b>
+                                <p>Jika anda Kesulitan dalam Proses Belajar, Tanyakan saja Kepada Mentor.</p>
+                        </div>
+                        <!-- penutup konten -->
+                        <!-- membuat isi konten -->
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <i class="bi bi-github"></i>
+                            <h1><b>Free Update Materi</h1></b>
+                                <p>Gratis Materi Terbaru secara Rutin.</p>
+                        </div>
+                        <!-- penutup konten -->
+                    </div>
+
+                    <!-- membuat pembungkus kembali bagi kolom dengan nama row text center jika lg ukuran besar text left -->
+                    <div class="row icon text-center text-lg-left">
+                        <!-- ketika ukuran layar large keatas maka nilai kolom adalah 4 karena 12:4=3 mennjadi 3 item di ukuran medium keatas 6 karena mau dibagi 2 dan menjadi 2 item if else jadi selain lg dan md nilai default menjadi 12 suapaya menjadi satu layar -->
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <!-- icon -->
+                            <i class="bi bi-currency-exchange"></i>
+                            <!-- isikonten -->
+                            <h1><b>Biaya Murah</h1></b>
+                                <p>Dapatkan Promo - Promo Menarik dari Kami.</p>
+                        </div>
+
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <i class="bi bi-award-fill"></i>
+                            <h1><b>Materi Runut</h1></b>
+                                <p>Materi Runut dari Mulai Dasar - Lanjut.</p>
+                        </div>
+
+                        <div class="col col-lg-4 col-md-6 col-12">
+                            <i class="bi bi-star-fill"></i>
+                            <h1><b>Sertifikat Kelas</h1></b>
+                                <p>Dapatkan Sertifikat dengan mengikuti Materi di Kelas.</p>
+                        </div>
+
+                    </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col pl-5 ">
-                <img src="gambar/2.JPG" width="320" />
-            </div>
-            <div class="col-lg-2 text-sm pr-5">
-                <i class="bi bi-clock-fill"></i>
-                <h1><b>Akses Selamanya</h1></b>
-                    <p>Hanya dengan sekali Bayar saja, Akses Materi Selamanya.</p>
-            </div>
-            <div class="col-lg-2 text-sm pr-5 ">
-                <i class="bi bi-people-fill"></i>
-                <h1><b>Konsultasi dengan Mentor</h1></b>
-                    <p>Jika anda Kesulitan dalam Proses Belajar, Tanyakan saja Kepada Mentor.</p>
-            </div>
-            <div class="col-lg-2 text-sm pr-5">
-                <i class="bi bi-github"></i>
-                <h1><b>Free Update Materi</h1></b>
-                    <p>Gratis Materi Terbaru secara Rutin.</p>
-            </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col-lg-2 text-sm ">
-                    <i class="bi bi-currency-exchange"></i>
-                    <h1><b>Biaya Murah</h1></b>
-                        <p>Dapatkan Promo - Promo Menarik dari Kami.</p>
-                </div>
-                <div class="col-lg-2 text-sm">
-                    <i class="bi bi-award-fill"></i>
-                    <h1><b>Materi Runut</h1></b>
-                        <p>Materi Runut dari Mulai Dasar - Lanjut.</p>
-                </div>
-                <div class="col-lg-2 text-sm">
-                    <i class="bi bi-star-fill"></i>
-                    <h1><b>Sertifikat Kelas</h1></b>
-                        <p>Dapatkan Sertifikat dengan mengikuti Materi di Kelas.</p>
-                </div>
-            </div>
+
+
             <!-- Kenapa Harus Belajar -->
 
 
             <!-- Halaman Promo Untukmu -->
             <div class="container" id="promo">
-                <div class="row">
+                <div class="row baris mt-5">
                     <div class="col">
-                        <h1 class="display-1 "><b>Promo Untukmu</h1></b>
+                        <h1 class="text-center "><b>Promo Untukmu</h1></b>
                             <p class="text-center">Jangan Lewatkan Kesempatan Promo - Promo Menarik ini</p>
                     </div>
                 </div>
 
-                <div class="row promo">
-                    <div class="col">
+                <!-- baris untuk promo -->
+                <!-- memberikan text-lg-left agar kiri -->
+                <div class="row promo text-left">
+                    <!-- col-md-6(12:6=2, untuk ukuran lg menjadi 3 colom dengan 12:3=4 sisanya menjadi 1 utuh) -->
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/3.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title"><b>Promo 50%</h5></b>
-                                    <p class="card-text">Dapatkan Potongan 50% dengan Membeli 1 Kelas.</p>
+                                    <p class="card-text ">Dapatkan Potongan 50% dengan Membeli 1 Kelas.</p>
                                     <a href="#" class="btn btn-primary">Ambil Promo</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <!-- penutup baris -->
+
+                    <!-- col-md-6(12:6=2, untuk ukuran lg menjadi 3 colom dengan 12:3=4 sisanya menjadi 1 utuh) -->
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/4.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -193,8 +221,10 @@
                             </div>
                         </div>
                     </div>
+                    <!-- penutup -->
 
-                    <div class="col">
+                    <!-- col-md-6(12:6=2, untuk ukuran lg menjadi 3 colom dengan 12:3=4 sisanya menjadi 1 utuh) -->
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/5.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -204,150 +234,283 @@
                             </div>
                         </div>
                     </div>
+                    <!-- penutup -->
                 </div>
             </div>
-            <!-- Halaman UntukMu -->
+
+
+
 
             <!-- Halaman Kelas Terbaru -->
-            <div class="container ">
-                <div class="row">
+            <div class="container mt-5 ">
+                <!-- baris untuk kalimat kelas baru -->
+                <div class="row mt-5">
                     <div class="col">
-                        <h1 class="display-1 "><b>Kelas Terbaru</h1></b>
+                        <h1 class="text-center"><b>Kelas Terbaru</h1></b>
                             <p class="text-center">Pilih Kelas yang Baru dirilis dengan Materi - materi yang fresh</p>
                     </div>
                 </div>
+                <!-- penutup untuk kalimat kelas baru -->
 
-                <div class="row terbaru">
-                    <div class="col">
+                <div class="row terbaru text-lg-left">
+                    <!-- ketika medium 12:6 2 dan akan menajadi 2col disaat lg4 akan menjadi 3 dan utuh 12  satu baris-->
+                    <!-- isi konten -->
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/6.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <img src="gambar/bintang5.png">
-                                <h5><b>Mastering 3D Icon with Blender</h5></b>
-                                    <p class="card-text ">Rp. 250.000</p>
-                                    <div class="col text-right">
-                                        <div class="col text-right">
-                                            <a href="#" class="btn  btn-primary">Ambil Kelas</a></div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="gambar/bintang5.png">
                                     </div>
+                                </div>
+
+                                <div class="row text-left mastering">
+                                    <div class="col">
+                                        <h5><b>Mastering 3D Icon with Blender</h5></b>
+                                    </div>
+                                </div>
+                                <div class="row w-100 blender d-flex align-items-center">
+                                    <div class="col">
+                                        <p class="card-text">Rp.250.000</p>
+                                        <div class="row text-right">
+                                            <div class="col">
+                                                <a href="#" class="btn  btn-primary">Ambil Kelas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <!-- penutup konten -->
+
+
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/7.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <img src="gambar/bintang4.png">
-                                <h5><b>Digital Imaging With Photoshop CC</h5></b>
-                                    <p class="card-text">Rp. 280.000</p>
-                                    <div class="col text-right">
-                                        <a href="#" class="btn btn-primary">Ambil Kelas</a></div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="gambar/bintang4.png">
+                                    </div>
+                                </div>
+
+                                <div class="row text-left mastering">
+                                    <div class="col">
+                                        <h5><b>Digital Imaging with Photoshop CC</h5></b>
+                                    </div>
+                                </div>
+                                <div class="row w-100 blender d-flex align-items-center">
+                                    <div class="col">
+                                        <p class="card-text">Rp.280.000</p>
+                                        <div class="row text-right">
+                                            <div class="col">
+                                                <a href="#" class="btn  btn-primary">Ambil Kelas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- penutup konten -->
 
-                    <div class="col">
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/8.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <img src="gambar/bintang.png">
-                                <h5><b>Flat Ilustration Design with Adobe Ilustrator CC</h5></b>
 
-                                    <p class="card-text">Rp. 300.000</p>
-                                    <div class="col text-right">
-                                        <a href="#" class="btn btn-primary">Ambil Kelas</a></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="gambar/bintang.png">
+                                    </div>
+                                </div>
+
+                                <div class="row text-left mastering">
+                                    <div class="col">
+                                        <h5><b>Flat Ilustration Design with Adobe Ilustrator CC</h5></b>
+                                    </div>
+                                </div>
+                                <div class="row w-100 blender d-flex align-items-center">
+                                    <div class="col">
+                                        <p class="card-text">Rp.300.000</p>
+                                        <div class="row text-right">
+                                            <div class="col">
+                                                <a href="#" class="btn  btn-primary">Ambil Kelas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- penutup -->
                 </div>
             </div>
 
             <!-- Halaman Kelas Terfavorit -->
-            <div class="container ">
-                <div class="row">
+            <div class="container mt-5 ">
+                <!-- baris untuk kalimat kelas baru -->
+                <div class="row mt-5">
                     <div class="col">
-                        <h1 class="display-1 "><b>Kelas Terfavorit</b></h1>
-                        <p class="text-center">Pilih Kelas yang paling banyak diminati</p>
+                        <h1 class="text-center"><b>Kelas Terfavorit</h1></b>
+                            <p class="text-center">Pilih Kelas yang Banyak diminati</p>
                     </div>
                 </div>
+                <!-- penutup untuk kalimat kelas baru -->
 
-                <div class="row favorit">
-                    <div class="col">
+                <div class="row terbaru text-lg-left">
+                    <!-- ketika medium 12:6 2 dan akan menajadi 2col disaat lg4 akan menjadi 3 dan utuh 12  satu baris-->
+                    <!-- isi konten -->
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/8.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <img src="gambar/bintang5.png">
-                                <h5><b>Mastering 3D Icon with Blender</h5></b>
-                                    <p class="card-text">Rp. 250.000</p>
-                                    <div class="col text-right"> <a href="#" class="btn btn-primary">Ambil Kelas</a></div>
 
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="gambar/bintang4.png">
+                                    </div>
+                                </div>
+
+                                <div class="row text-left mastering">
+                                    <div class="col">
+                                        <h5><b>Mastering Adobe Ilustrator</h5></b>
+                                    </div>
+                                </div>
+                                <div class="row w-100 blender d-flex align-items-center">
+                                    <div class="col">
+                                        <p class="card-text">Rp.250.000</p>
+                                        <div class="row text-right">
+                                            <div class="col">
+                                                <a href="#" class="btn  btn-primary">Ambil Kelas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <!-- penutup konten -->
+
+
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/7.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <img src="gambar/bintang4.png">
-                                <h5><b>Digital Imaging With Photoshop CC</h5></b>
-                                    <p class="card-text">Rp. 280.000</p>
-                                    <div class="col text-right"> <a href="#" class="btn btn-primary">Ambil Kelas</a></div>
 
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="gambar/bintang4.png">
+                                    </div>
+                                </div>
+
+                                <div class="row text-left mastering">
+                                    <div class="col">
+                                        <h5><b>Digital Imaging with Photoshop CC</h5></b>
+                                    </div>
+                                </div>
+                                <div class="row w-100 blender d-flex align-items-center">
+                                    <div class="col">
+                                        <p class="card-text">Rp.280.000</p>
+                                        <div class="row text-right">
+                                            <div class="col">
+                                                <a href="#" class="btn  btn-primary">Ambil Kelas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- penutup konten -->
 
-                    <div class="col">
+                    <div class="col-md-6 col-lg-4 col-12">
                         <div class="card w-100">
                             <img class="card-img-top" src="gambar/6.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <img src="gambar/bintang.png">
-                                <h5><b>Flat Ilustration Design with Adobe Ilustrator CC</h5></b>
-                                    <p class="card-text">Rp. 300.000</p>
-                                    <div class="col text-right">
-                                        <a href="#" class="btn btn-primary">Ambil Kelas</a></div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="gambar/bintang4.png">
+                                    </div>
+                                </div>
+
+                                <div class="row text-left mastering">
+                                    <div class="col">
+                                        <h5><b>Mastering 3D Design with Blender</h5></b>
+                                    </div>
+                                </div>
+                                <div class="row w-100 blender d-flex align-items-center">
+                                    <div class="col">
+                                        <p class="card-text">Rp.300.000</p>
+                                        <div class="row text-right">
+                                            <div class="col">
+                                                <a href="#" class="btn  btn-primary">Ambil Kelas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-
-            <div class="container mt-4 ">
-                <div class="row master">
-                    <div class="col">
-                        <div class="card" style="width: 22rem">
+                    <div class="col-md-6 col-lg-4 col-12">
+                        <div class="card w-100">
                             <img class="card-img-top" src="gambar/9.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <img src="gambar/bintang4.png">
-                                <h5><b>Mastering 3D Icon with Blender</h5></b>
-                                    <p class="card-text">Rp. 250.000</p>
-                                    <div class="col text-right">
-                                        <a href="#" class="btn btn-primary">Ambil Kelas</a></div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="gambar/bintang4.png">
+                                    </div>
+                                </div>
+
+                                <div class="row text-left mastering">
+                                    <div class="col">
+                                        <h5><b>Logo Design Mastery</h5></b>
+                                    </div>
+                                </div>
+                                <div class="row w-100 blender d-flex align-items-center">
+                                    <div class="col">
+                                        <p class="card-text">Rp.300.000</p>
+                                        <div class="row text-right">
+                                            <div class="col">
+                                                <a href="#" class="btn  btn-primary">Ambil Kelas</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- penutup -->
                 </div>
             </div>
 
             <!-- Membuat Tombol Lihat semua Kelas -->
             <div class="container">
-                <div class="row lihat kelas py-5">
-                    <div class="col text-center">
-                        <a href="/kalaog/katalog.html" class="btn btn-primary">Lihat Semua Kelas<i class="bi bi-arrow-right text-right"></i></a>
+                <div class="row lihat py-5">
+                    <div class="col d-flex justify-content-center">
+                        <a href="/kalaog/katalog.html" class="btn btn-primary">Lihat Semua Kelas <i class="bi bi-arrow-right text-right"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Membuat Testimoni -->
-            <div class="row testimonial ">
-                <div class="col text-center">
-                    <br>
-                    <br>
-                    <h1><b>Apa Kata Mereka Tentang Kami</h1></b>
-                        <p>Cerita Gembira dari para Students</p>
+            <div class="container">
+                <div class="row d-flex testimonial ">
+                    <div class="col text-center">
+                        <br>
+                        <br>
+                        <h1 class="text-center"><b>Apa Kata Mereka Tentang Kami</h1></b>
+                            <p>Cerita Gembira dari para Students</p>
+                    </div>
                 </div>
             </div>
-
 
 
 
@@ -525,15 +688,18 @@
 
 
             <!-- Panduan Audiens -->
-
-            <div class="container">
-                <div class="row panduan mb-4">
+            <div class="container mt-5">
+                <div class="row d-flex testimonial ">
                     <div class="col text-center">
-                        <h1><b>Pertanyaan yang Sering di Tanyakan</h1></b>
+                        <h1 class="text-center"><b>Pertanyaan yang sering di Tanyakan</h1></b>
                     </div>
                 </div>
-                <div class="row row-cols-xl-2 row-cols-lg-1 row-cols-md-5 row-cols-sm-5 row-cols-5">
-                    <div class="col">
+            </div>
+
+            <div class="container">
+                <!-- row row-cols-md-2 artinya halaman utama akan menjadi2 -->
+                <div class="row row-cols-md-2 row-cols-1">
+                    <div class="col ">
                         <div class="accordion" id="accordionExample">
                             <div class="card">
                                 <div class="card-header" id="headingOne">
@@ -733,11 +899,12 @@
             </div>
 
 
+
             <!-- Footer -->
 
             <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-3 mt-5">
+                <div class="row row-cols-md-2 row-cols-1">
+                    <div class="col-md-3 mt-5 text-left">
                         <div class="bootstrap">
                             <img src="gambar/logo.JPG" width="50px">Bootstrap
                             <br>
@@ -748,34 +915,34 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3 mt-3">
+                    <div class="col-md-3 mt-3 text-left">
                         <div class="footerlink">
                             <ul>
                                 <li>
                                     <p><b>Kelas</p></b>
                                 </li>
-                                <li><a href="/kalaog/katalog.html">Semua Kelas</a></li>
-                                <li><a href="/grapic/grapic.html">Kategori - Grapic Design</a></li>
-                                <li><a href="/ilustration/ilustration.html">Kategori - Ilustration</a></li>
-                                <li><a href="/3D/3d.html">Kategori - 3D Design</a></li>
-                                <li><a href="/ui/ui.html">Kategori UI/UX Design</a></li>
-                                <li><a href="/videograpic/video.html">Kategori - Videography</a></li>
-                                <li><a href="/videograpic/video.html">and Motion</a></li>
+                                <li><a href="kalaog/katalog.html">Semua Kelas</a></li>
+                                <li><a href="grapic/grapic.html">Kategori - Grapic Design</a></li>
+                                <li><a href="ilustration/ilustration.html">Kategori - Ilustration</a></li>
+                                <li><a href="3D/3d.html">Kategori - 3D Design</a></li>
+                                <li><a href="ui/ui.html">Kategori UI/UX Design</a></li>
+                                <li><a href="videograpic/video.html">Kategori - Videography</a></li>
+                                <li><a href="videograpic/video.html">and Motion</a></li>
                             </ul>
 
                         </div>
                     </div>
 
-                    <div class="col-md-3 mt-3">
+                    <div class="col-md-3 mt-3 text-left">
                         <div class="footerlink">
                             <ul>
                                 <li>
                                     <p><b>Bantuan</b></p>
                                 </li>
-                                <li><a href="/panduan/panduan.html">Panduan</a></li>
-                                <li><a href="/syarat/syarat.html">Syarat & Ketentuan</a></li>
-                                <li><a href="/faq/faq.html">FAQ</a></li>
-                                <li><a href="/faq/">Kontak</a></li>
+                                <li><a href="panduan/panduan.html">Panduan</a></li>
+                                <li><a href="syarat/syarat.html">Syarat & Ketentuan</a></li>
+                                <li><a href="faq/faq.html">FAQ</a></li>
+                                <li><a href="faq/">Kontak</a></li>
 
                             </ul>
                         </div>
@@ -811,7 +978,7 @@
                 </div>
                 <div class="copy py-5 pr-5">
                     <div class="row">
-                        <div class="col">
+                        <div class="col col-12 text-left">
                             <!-- pasangcopy -->
                             <p>&copy;Copyright 2022 bt Grafis Together</p>
                         </div>
