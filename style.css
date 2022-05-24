@@ -603,4 +603,11 @@ nav .collapse .btn:hover {
         left: 50px;
         color: black;
     }
+    nav .navbar-collapse .navbar-nav button {
+        position: relative;
+        left: 5px;
+    }
+    nav .navbar-collapse .nav-item .nav-link {
+        text-align: left;
+    }
 }
